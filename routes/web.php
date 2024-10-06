@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/client', [ClientController::class, 'index']);
+Route::get('/client/conference/{id}', [ClientController::class, 'show']);
+Route::post('/client/register/{id}', [ClientController::class, 'register']);
