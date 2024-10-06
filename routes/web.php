@@ -13,3 +13,6 @@ Route::get('/', function () {
 Route::get('/client', [ClientController::class, 'index']);
 Route::get('/client/conference/{id}', [ClientController::class, 'show']);
 Route::post('/client/register/{id}', [ClientController::class, 'register']);
+
+Route::get('/employee', [EmployeeController::class, 'index']);
+Route::get('/employee/conference/{id}', [EmployeeController::class, 'show']);
